@@ -2,7 +2,7 @@ name = "smogon-metronome-generator"
 type = "javascript"
 workers_dev = true
 
-route = ''
+route = "smogon-metronome-generator.mooshq.xyz/*"
 usage_model = ''
 compatibility_flags = []
 compatibility_date = "2021-10-08"
