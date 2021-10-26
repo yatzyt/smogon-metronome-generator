@@ -10,6 +10,7 @@ jobs:
     env:
       CF_ACCOUNT_ID: "${{ secrets.CF_ACCOUNT_ID }}"
       CF_API_TOKEN: "${{ secrets.CF_API_TOKEN }}"
+      CF_ZONE_ID: "${{ secrets.CF_ZONE_ID }}"
     steps:
       - uses: actions/checkout@v2
       - uses: cachix/install-nix-action@v13
@@ -23,5 +24,6 @@ jobs:
         with:
           name: moosingin3space
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+      - run: mkdir dist
       - run: nix develop -c wrangler publish
         name: Build and deploy worker

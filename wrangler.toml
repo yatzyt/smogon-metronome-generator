@@ -1,6 +1,5 @@
 name = "smogon-metronome-generator"
 type = "javascript"
-workers_dev = true
 
 route = "smogon-metronome-generator.mooshq.xyz/*"
 usage_model = ''
