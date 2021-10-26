@@ -56,7 +56,7 @@ const StatelessApp = ({ pkmn, regenerate }: AppProps) => {
                         Written by Nathan Moos.
                     </span>
                     <a className={tw`text-blue-500`}
-                        href="https://github.com/moosingin3space">
+                        href="https://github.com/moosingin3space/smogon-metronome-generator">
                             <i className="fab fa-github"></i>
                             {` `}
                             GitHub
