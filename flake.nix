@@ -4,15 +4,19 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    nur.url = "github:nix-community/NUR";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
+  outputs = { self, nixpkgs, flake-utils, nur }:
     let name = "smogon-metronome-generator";
     in
     flake-utils.lib.eachDefaultSystem
     (system:
       let
-        pkgs = import nixpkgs { inherit system; };
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = [ nur.overlay ];
+        };
         buildInputs = with pkgs; [
           deno
         ];
@@ -25,6 +29,8 @@
         };
         nativeBuildInputs = with pkgs; [
           nixpkgs-fmt
+          wrangler
+          pkgs.nur.repos.moosingin3space.velociraptor
         ];
       in
       rec {

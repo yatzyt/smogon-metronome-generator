@@ -1,0 +1,19 @@
+name = "smogon-metronome-generator"
+type = "javascript"
+workers_dev = true
+
+route = ''
+usage_model = ''
+compatibility_flags = []
+compatibility_date = "2021-10-08"
+
+kv_namespaces = [ 
+         { binding = "STATIC_ASSETS", id = "c2dd040d238a42b8802d82dca10745b7", preview_id = "8b861934e5914bc2be3096749e65b00d" }
+]
+
+[build]
+command = "vr buildForWorkers"
+
+[build.upload]
+format = "modules"
+main = "./worker.mjs"

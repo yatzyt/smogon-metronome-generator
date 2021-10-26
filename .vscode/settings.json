@@ -2,12 +2,17 @@
     "nixEnvSelector.nixFile": "${workspaceRoot}/flake.nix",
     "deno.enable": true,
     "deno.lint": true,
-    "deno.unstable": false,
+    "deno.unstable": true,
     "files.watcherExclude": {
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
         "**/node_modules/*/**": true,
         "**/.hg/store/**": true,
-        "**/.direnv/flake-*": true,
+        "**/.direnv/*": true,
+        "**/dist/*": true,
+    },
+    "deno.suggest.imports.hosts": {
+        "https://deno.land": true,
+        "https://cdn.skypack.dev": false
     }
 }
