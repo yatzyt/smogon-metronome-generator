@@ -62,14 +62,6 @@ export const AllAbilities: Ability[] = [
         name: "Battle Armor",
     },
     {
-        num: 10,
-        name: "Battle Bond",
-    },
-    {
-        num: 24,
-        name: "Beast Boost",
-    },
-    {
         num: 1,
         name: "Berserk",
     },
@@ -266,10 +258,6 @@ export const AllAbilities: Ability[] = [
         name: "Full Metal Body",
     },
     {
-        num: 69,
-        name: "Fur Coat",
-    },
-    {
         num: 77,
         name: "Gale Wings",
     },
@@ -332,10 +320,6 @@ export const AllAbilities: Ability[] = [
     {
         num: 52,
         name: "Hyper Cutter",
-    },
-    {
-        num: 15,
-        name: "Ice Body",
     },
     {
         num: 48,
@@ -514,10 +498,6 @@ export const AllAbilities: Ability[] = [
         name: "Neuroforce",
     },
     {
-        num: 56,
-        name: "Neutralizing Gas",
-    },
-    {
         num: 99,
         name: "No Guard",
     },
@@ -568,10 +548,6 @@ export const AllAbilities: Ability[] = [
     {
         num: 43,
         name: "Poison Touch",
-    },
-    {
-        num: 11,
-        name: "Power Construct",
     },
     {
         num: 23,
@@ -664,10 +640,6 @@ export const AllAbilities: Ability[] = [
     {
         num: 46,
         name: "Sand Rush",
-    },
-    {
-        num: 45,
-        name: "Sand Spit",
     },
     {
         num: 8,
@@ -938,16 +910,8 @@ export const AllAbilities: Ability[] = [
         name: "Vital Spirit",
     },
     {
-        num: 10,
-        name: "Volt Absorb",
-    },
-    {
         num: 54,
         name: "Wandering Spirit",
-    },
-    {
-        num: 11,
-        name: "Water Absorb",
     },
     {
         num: 99,
