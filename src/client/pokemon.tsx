@@ -6,7 +6,7 @@ const PokemonDisplay = (poke: Pokemon) => (
         <img src={poke.species.imageUrl} width={250} height={250}/>
         <h3>
             {poke.species.name}
-            <small>{poke.species.pokedexNum}</small>
+            <small className={tw`pl-1`}>#{poke.species.pokedexNum}</small>
         </h3>
         <p>Ability: {poke.ability.name}</p>
         <p>Holding: {poke.heldItem}</p>

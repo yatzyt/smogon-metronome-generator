@@ -43,7 +43,7 @@ const StatelessApp = ({ pkmn, regenerate }: AppProps) => {
         }
     }, [pkmn]);
     return (
-        <div className={tw`h-screen bg-green-100`}>
+        <div className={tw`h-screen bg-green-800`}>
             <div className={tw`container h-screen mx-auto px-4 py-4 grid grid-rows-fixed-header grid-cols-2 bg-indigo-50`}>
                 <h1 className={tw`text-3xl font-sans`}>
                     Smogon Metronome Battle Generator
